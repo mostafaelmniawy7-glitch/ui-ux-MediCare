@@ -1,8 +1,8 @@
-# MediCare — Smart Prescription & Medication Management UI/UX
+# MediCare — AI-Powered Prescription Management App (Prototype)
 
-A complete healthcare mobile application design featuring 12 interactive screens built with HTML/CSS and prototyped in Figma. Focused on smart medication management, AI-powered prescription scanning, and treatment tracking.
+A high-fidelity interactive prototype of an AI-powered healthcare app that scans prescription images, extracts medication data, and generates smart treatment schedules. Built with HTML/CSS/JS and designed in Figma.
 
-![Status](https://img.shields.io/badge/status-completed-brightgreen)
+![Status](https://img.shields.io/badge/status-prototype-yellow)
 ![Design](https://img.shields.io/badge/tool-Figma-blue)
 ![Prototype](https://img.shields.io/badge/prototype-Interactive-orange)
 ![WCAG](https://img.shields.io/badge/WCAG-AA%20Compliant-success)
@@ -11,66 +11,67 @@ A complete healthcare mobile application design featuring 12 interactive screens
 
 ## Overview
 
-**MediCare** is a healthcare mobile application concept designed to simplify medication management for patients. The app leverages AI-powered prescription scanning, smart dosage reminders, and treatment plan tracking to help users stay compliant with their medication schedules.
+**MediCare** is a high-fidelity interactive prototype of an AI-powered mobile application that revolutionizes prescription management. The prototype demonstrates how users can:
 
-This repository contains two complete deliverables:
+1. **Capture** a prescription photo via camera
+2. **Extract** medication data using AI
+3. **Generate** a smart treatment schedule
+4. **Track** adherence through analytics
+5. **Ask** questions via an integrated chatbot
 
-1. **Static UI Design** — 12 high-fidelity screens designed in Figma
-2. **Interactive Prototype** — Fully functional HTML/CSS/JS implementation
+This project focuses on **UX/UI design and front-end interactivity** — it is not a production backend application.
 
 ---
 
 ## Live Demo
 
-### Interactive Prototype
-👉 **[View Live Prototype](https://ais-pre-b5e2jkatedqlbjwqucxwjn-73068090131.europe-west3.run.app/)**
+👉 **[View Interactive Prototype](https://ais-pre-b5e2jkatedqlbjwqucxwjn-73068090131.europe-west3.run.app/)**
 
-### Figma Design File
 👉 **[View Figma Design](https://www.figma.com/design/szNSw5XxNQMt4uOitJVtWS/Untitled?node-id=0-1&t=Ffn8JwRmeveL5dzY-1)**
 
 ---
 
-## Problem Statement
+## Project Scope
 
-Patients managing chronic conditions or multi-drug regimens face several challenges:
+### ✅ What's Included
+- **14 High-Fidelity Screens** — Complete user journey
+- **Interactive Camera** — Opens and captures (prototype flow)
+- **Working Chatbot** — Responds to user queries
+- **Smooth Navigation** — Transitions between all screens
+- **Design System** — Colors, typography, spacing
+- **Accessibility** — WCAG AA compliant
+- **RTL Support** — Arabic-first layout
 
-- **Medication non-adherence** — Forgetting doses or taking them at wrong times
-- **Prescription confusion** — Misreading handwritten prescriptions
-- **No centralized tracking** — Multiple prescriptions managed across notebooks, apps, or memory
-- **Inventory blind spots** — Running out of medication unexpectedly
-- **Language barriers** — Complex medical terminology
-
-MediCare addresses these pain points through an accessible, AI-enhanced mobile experience.
-
----
-
-## Solution
-
-A mobile-first application that:
-- **Scans prescriptions** using the phone's camera
-- **Extracts medication data** via AI (drug name, dosage, frequency, duration)
-- **Generates a smart treatment plan** with automated reminders
-- **Tracks inventory** to prevent running out
-- **Ensures accessibility** with WCAG AA-compliant contrast ratios
+### ❌ What's Not Included (Out of Scope)
+- Backend server
+- Real OCR / Vision API
+- Database / User authentication
+- Real prescription analysis
+- Push notifications
+- Payment system
 
 ---
 
-## Screens (12 Total)
+## Screens (14 Total)
 
-| # | Screen | Description |
-|---|--------|-------------|
-| 01 | **Splash Screen** | MediCare branding & app intro |
-| 02 | **Login** | User authentication |
+| # | Screen | Purpose |
+|---|--------|---------|
+| 01 | **Splash** | App intro & branding |
+| 02 | **Login** | Authentication UI |
 | 03 | **Sign Up** | New account creation |
-| 04 | **Home Dashboard** | Overview of today's doses & smart reminders |
-| 05 | **Prescription Scan** | Camera capture interface |
-| 06 | **Analyzing** | AI processing state |
-| 07 | **Results** | Detected medications display |
-| 08 | **Review & Edit** | Manual correction of extracted data |
-| 09 | **Confirmation** | Treatment plan confirmation |
-| 10 | **Treatment Plan** | Dosage schedule & reminders |
-| 11 | **Medication List** | Inventory management |
-| 12 | **Profile & Settings** | User preferences & account |
+| 04 | **Home Dashboard** | Today's doses & smart stats |
+| 05 | **Scan Prescription** | Camera interface |
+| 06 | **Analyzing** | AI processing animation |
+| 07 | **Results** | Detected medications with confidence scores |
+| 08 | **Review & Edit** | Manual correction UI |
+| 09 | **Confirmation** | Plan creation confirmation |
+| 10 | **Treatment Plan** | Weekly dosage schedule |
+| 11 | **Medications List** | Inventory management |
+| 12 | **Medication Details** | Full medication info |
+| 13 | **Dose History** | 14-day analytics dashboard |
+| 14 | **Profile & Settings** | User account & preferences |
+
+**Bonus:** Integrated AI Chatbot for user queries.
 
 ---
 
@@ -80,28 +81,29 @@ A mobile-first application that:
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| **Teal Brand** | `#0D7C66` | Primary actions, buttons, brand elements |
+| **Teal Brand** | `#0D7C66` | Primary actions, buttons, brand |
 | **Background Canvas** | `#F8FAFC` | Screen backgrounds |
-| **Input Border** | `#E2E8F0` | Form input borders |
-| **Google Blue** | `#4285F4` | Google sign-in button |
+| **Input Border** | `#E2E8F0` | Form fields |
+| **Google Blue** | `#4285F4` | Google sign-in |
 
 ### Accessibility
 
 - **Contrast Ratio:** 7.2:1
 - **Compliance:** WCAG AA
-- **Optimized for:** Large text readability
-- **Design priority:** Accessibility-first approach for elderly users
+- **Optimized For:** Large text readability (elderly users)
+- **Touch Targets:** 44x44px minimum
 
 ### Typography
 
-- **Primary Font:** [Inter / SF Pro / Cairo — أكّدلي]
-- **Scale:** Mobile-optimized (16px base)
+- **Primary Font:** Cairo / IBM Plex Sans Arabic
+- **Base Size:** 16px
+- **RTL Support:** Native Arabic-first layout
 
-### Spacing & Layout
+### Layout
 
 - **Grid:** 8px base unit
 - **Border Radius:** Consistent rounded corners
-- **Touch Targets:** Minimum 44x44px (mobile best practice)
+- **Spacing:** Mobile-optimized
 
 ---
 
@@ -111,45 +113,46 @@ A mobile-first application that:
 |-------|-----------|
 | **Design** | Figma |
 | **Structure** | HTML5 |
-| **Styling** | CSS3 (transitions, animations, gradients) |
+| **Styling** | CSS3 (animations, transitions) |
 | **Interactivity** | JavaScript |
 | **Prototype Generation** | Google AI Studio |
 
 ---
 
-## Features
+---
 
-### Core Functionality
-- Smart dosage reminders
-- Prescription scanning via camera
-- AI-powered medication recognition
-- Multi-drug treatment plan generation
-- Inventory tracking with low-stock alerts
+## Features Demonstrated
 
-### User Experience
-- Minimal onboarding (3 screens)
-- Single-tap actions
-- Context-aware notifications
-- Dark mode ready (future)
-- Multi-language support (AR/EN)
+### Core UX
+- Smart medication tracking
+- Camera-based prescription scanning (prototype)
+- AI-powered medication detection (mock data)
+- Multi-drug treatment plans
+- Inventory management with low-stock alerts
+
+### Interactions
+- Smooth screen transitions
+- Loading states (AI analyzing)
+- Confidence scores display
+- Interactive chatbot
 
 ### Accessibility
-- WCAG AA compliant
+- WCAG AA compliant colors
 - High contrast (7.2:1)
 - Large touch targets
-- Screen reader compatible
-- Keyboard navigation support
+- RTL layout for Arabic
+- Clear focus states
 
 ---
 
 ## Design Process
 
 1. **Research** — Analyzed medication management pain points
-2. **Wireframing** — Sketched 12 core screens
+2. **Wireframing** — Sketched core user journeys
 3. **Design System** — Defined colors, typography, spacing
-4. **High-Fidelity Design** — Built in Figma
-5. **Prototype** — Interactive HTML/CSS implementation
-6. **Testing** — Contrast and accessibility validation
+4. **High-Fidelity Design** — Built 14 screens in Figma
+5. **Interactive Prototype** — HTML/CSS/JS implementation
+6. **Accessibility Validation** — WCAG AA compliance check
 
 ---
 
@@ -157,54 +160,53 @@ A mobile-first application that:
 
 ### For Patients
 - Chronic illness management (diabetes, hypertension)
-- Post-surgery medication schedules
-- Elderly patients with multi-drug regimens
-- Caregivers managing family members' medications
+- Multi-drug treatment plans
+- Elderly patients needing reminders
+- Post-surgery medication tracking
 
-### For Pharmacies & Clinics
-- Digital prescription intake
-- Patient adherence tracking
-- Automated refill reminders
+### For Caregivers
+- Managing family members' medications
+- Shared prescription tracking
 
 ### For Healthcare Providers
-- Better patient compliance data
-- Reduced readmission rates
-- Streamlined prescription communication
+- Understanding patient-side UX
+- Reference for prescription digitization
 
 ---
 
 ## Screenshots
 
-### Splash Screen
+### Splash & Auth
 ![Splash](screenshots/01-splash.png)
+![Login](screenshots/02-login.png)
 
-### Home Dashboard
+### Core Flow
 ![Home](screenshots/04-home.png)
-
-### Prescription Scan
 ![Scan](screenshots/05-scan.png)
-
-### Results
 ![Results](screenshots/07-results.png)
 
-### Treatment Plan
-![Plan](screenshots/10-plan.png)
+### Management
+![Treatment Plan](screenshots/10-plan.png)
+![Dose History](screenshots/13-history.png)
+
+---
 ## Project Structure
 
 ## Design Assets
-- Figma source file
+- Figma source file (14 screens)
 - Design system documentation
+- Color palette and typography tokens
 
 ## Interactive Prototype
-- HTML structure
-- CSS styling and animations
-- JavaScript interactivity
+- HTML structure for all screens
+- CSS styling, animations, and transitions
+- JavaScript for interactivity and navigation
 
 ## Screenshots
-- All 12 screen captures
-- Organized by screen number
+- High-resolution captures of all 14 screens
+- Organized by screen number and flow
 
 ## Documentation
 - README with full project overview
-- Accessibility statement
-- Design system reference
+- Accessibility statement (WCAG AA)
+- Design process and user flows.
